@@ -1,11 +1,10 @@
-# Reto Omnilatam
+# challenger Omnilatam
 
-Este proyecto se realiza como reto y prueba de habilidades de un programador BACK-END python.
+This project was made as a challenge and test of skills of a BACK-END python developer.
 
+# Tools
 
-# Herramientas
-
-##### 1) Lenguaje de programación
+##### 1) Lenguage
 
 - [Python 3.9](https://www.python.org/downloads/release/python-396/ "Python3")
 
@@ -13,47 +12,48 @@ Este proyecto se realiza como reto y prueba de habilidades de un programador BAC
 
 - [Pycharm](https://www.jetbrains.com/es-es/pycharm/download/#section=windows "Pycharm")
 
-##### 3) Motor de base de datos
+##### 3) Data bases
 
 
 - [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads "PostgreSQL")
 
 
-# Instalacion en local
+# Installation on local
 
-##### 1) Clonar o descargar el proyecto del repositorio
+##### 1) Clone or download the project from the repository
 
 `git clone https://github.com/marcosandresgarcia/reto_omni.git`
 
-##### 2) Crear un entorno virtual para posteriormente instalar las librerias del proyecto
+##### 2) Create a virtual environment to later install the project libraries
 
 - `python3 -m venv venv` (Windows)
 -  `virtualenv venv -ppython3` (Linux)
 
-##### 3) Activar el entorno virtual de nuestro proyecto
+##### 3) Activate the virtual environment of our project
 
 - `cd venv\Scripts\activate.bat` (Windows)
 - `source venv/bin/active` (Linux)
 
-##### 4) Instalar todas las librerias del proyecto que se encuentran en la carpeta requeriments
+##### 4) Install all the libraries of the project that are in the requirements folder
+
 
 - `pip install -r requeriments/local.txt`
 
-##### 5) Crear la base de datos con las migraciones y el superuser para iniciar sesión
+##### 5) Create the database with the migrations and the superuser to login
 
 - `python manage.py makemigrations`
 - `python manage.py migrate`
 - `python manage.py createsuperuser`
 
 
-# Instalación en Docker
+# Installation on Docker
 
-#####  1) Cree las variables de entorno:
+#####  1) Create the environment variables:
 
-#####  2) Construya los servicios:
+#####  2) Build the services:
 
 - `docker-compose build`
 
-#####  3) Inicie servicios:
+#####  3) Start services:
 
 - `docker-compose up`
