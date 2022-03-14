@@ -22,20 +22,17 @@ This project was made as a challenge and test of skills of a BACK-END python dev
 
 ##### 1) Clone or download the project from the repository
 
-`git clone https://github.com/marcosandresgarcia/reto_omni.git`
+`git clone https://github.com/marcosandresgarcia/omni_challenge.git`
 
 ##### 2) Create a virtual environment to later install the project libraries
 
 - `python3 -m venv venv` (Windows)
--  `virtualenv venv -ppython3` (Linux)
 
 ##### 3) Activate the virtual environment of our project
 
 - `cd venv\Scripts\activate.bat` (Windows)
-- `source venv/bin/active` (Linux)
 
 ##### 4) Install all the libraries of the project that are in the requirements folder
-
 
 - `pip install -r requeriments/local.txt`
 
