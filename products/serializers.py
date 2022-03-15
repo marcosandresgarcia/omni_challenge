@@ -7,7 +7,7 @@ class ProductsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Products
-        exclude = ("created_at", "updated_at", "delete_at", "state")
+        fields = ("id", "name", "description", "unit_price", "units")
 
 
 class UnitsProductSerializer(serializers.Serializer):
