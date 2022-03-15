@@ -17,7 +17,9 @@ class Shipments(BaseModel):
     status = models.CharField(max_length=30, choices=STATUS)
 
     class Meta:
-        db_table = "shipments"
+        verbose_name = "Envio"
+        verbose_name_plural = "Envioss"
+
 
     def save_products_to_ship(self, products):
         order = self.order
@@ -35,7 +37,8 @@ class ProductsToShip(BaseModel):
     product_to_send = models.ForeignKey(to=OrderProductDetail, on_delete=models.DO_NOTHING)
 
     class Meta:
-        db_table = "products_to_ship"
+        verbose_name = "Producto para enviar"
+        verbose_name_plural = "Productos para enviar"
         unique_together = (("shipment", "product_to_send"),)
 
 

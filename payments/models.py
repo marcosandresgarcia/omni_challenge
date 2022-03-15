@@ -15,7 +15,8 @@ class Payment(BaseModel):
     status = models.CharField(max_length=30, choices=STATUS)
 
     class Meta:
-        db_table = "payments"
+        verbose_name = "Pago"
+        verbose_name_plural = "Pagos"
 
     def set_payment_detail(self, order, amount):
         return PaymentDetail.objects.create(payment=self, order=order, amount=amount)
@@ -27,7 +28,8 @@ class PaymentDetail(BaseModel):
     amount = models.FloatField()
 
     class Meta:
-        db_table = "payment_details"
+        verbose_name = "Detalle del pago"
+        verbose_name_plural = "Detalles del pago"
         unique_together = (("payment", "order"),)
 
 
