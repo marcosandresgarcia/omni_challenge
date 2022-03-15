@@ -4,9 +4,9 @@ PENDING_SHIPPING = "Envio pendiente"
 SHIPPED = "Enviado"
 DELIVERED = "Entregado"
 STATUS = (
-    ("Abierto", "Abierto"),
-    ("Pago pendiente", "Pago pendiente"),
-    ("Envio pendiente", "Envio pendiente"),
-    ("Enviado", "Enviado"),
-    ("Entregado", "Entregado")
+    (OPEN, OPEN),
+    (PENDING_PAYMENT, PENDING_PAYMENT),
+    (PENDING_SHIPPING, PENDING_SHIPPING),
+    (SHIPPED, SHIPPED),
+    (DELIVERED, DELIVERED)
 )
