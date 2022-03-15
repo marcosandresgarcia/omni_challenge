@@ -16,5 +16,5 @@ class OrdersSerializer(serializers.ModelSerializer):
     product_detail = OrderProductDetailsSerializer(many=True, read_only=True)
     class Meta:
         model = Orders
-        exclude = ("created_at", "updated_at", "delete_at")
+        fields = ("id", "user", "total_order_price", "status", "product_detail", "created_at", "updated_at")
 
