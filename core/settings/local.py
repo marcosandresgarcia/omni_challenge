@@ -1,5 +1,5 @@
 from core.settings.base import *
-DEBUG = False
+DEBUG = True
 DB = "postgres"
 
 if DB == "sqlite":
